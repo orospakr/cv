@@ -1,0 +1,128 @@
+% Andrew Clunis' CV, LaTeX format.
+
+% lots of help shamelessly taken from:
+% http://www.cv-templates.info/2009/03/professional-cv-latex/
+
+% Maker and Founder Board member @ 2008-2009 CREDIL
+% ...
+%
+
+\documentclass[letterpaper,10pt]{article}
+
+%A Few Useful Packages
+\usepackage{marvosym}
+\usepackage{fontspec}                                   %for loading fonts
+\usepackage{xunicode,xltxtra,url,parskip}       %other packages for formatting
+\RequirePackage{color,graphicx}
+\usepackage[usenames,dvipsnames]{xcolor}
+
+% an alternative to Layaureo can be ** \usepackage{fullpage} **
+\usepackage{fullpage}
+\usepackage{supertabular}                               %for Grades
+\usepackage{longtable}
+\usepackage{titlesec}                                   %custom \section
+
+%Setup hyperref package, and colours for links
+\usepackage{hyperref}
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour, linkcolor=linkcolour}
+
+%FONTS
+\defaultfontfeatures{Mapping=tex-text}
+\setmainfont[SmallCapsFont = Fontin SmallCaps]{Fontin}
+
+%CV Sections inspired by:
+%http://stefano.italians.nl/archives/26
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{3pt}{3pt}
+\titleformat{\subsection}{\Large}{}{0em}{}
+\titlespacing{\subsection}{1pt}{5pt}{5pt}
+%Tweak a bit the top margin
+%\addtolength{\voffset}{-1.3cm}
+
+
+\begin{document}
+
+\pagestyle{empty} % non-numbered pages
+
+\par{\centering
+{\Huge Andrew \textsc Clunis
+}\bigskip\par}
+
+\section{Personal}
+\begin{longtable}{p{3cm}|p{12cm}}
+  \textsc{Date of Birth:} & July 29th, 1985 \\
+  \textsc{Address:} & 305-457 McLeod St, Ottawa, Ontario, Canada \\
+  \textsc{Phone:} & +1.613.286.8829 \\
+  \textsc{WWW Site:} & \href{http://www.orospakr.ca}{http://www.orospakr.ca} \\
+  \textsc{Electronic Mail:} & \href{mailto:andrew@orospakr.ca}{andrew@orospakr.ca}, \href{mailto:aclunis@credil.org}{aclunis@credil.org} \\
+  \textsc{Languages:} & English Fluent
+\end{longtable}
+
+\section{Overview}
+Andrew Clunis is a self-taught software developer, specialising in Free Software, with experience writing both graphical desktop and web-based applications.  An active participant in the Free Software community, Andrew has contributed code to a number of different projects.
+
+\section{Skills}
+\begin{longtable}{p{3cm}|p{12cm}}
+  \textsc{Operating Systems} & GNU/Linux (Debian), *BSD, Windows\\
+  \multicolumn{2}{c}{} \\
+  \textsc{Languages} & Ruby, Python, Perl, C(++), C\#, Java \\
+  \multicolumn{2}{c}{} \\
+  \textsc{Systems} & GTK, Gstreamer, Ruby on Rails, Android, PacketVideo OpenCORE, Linux Kernel
+\end{longtable}
+
+\section{Work Experience}
+\begin{longtable}{p{3cm}|p{12cm}}
+  \emph{Current} & Maker \emph{for} \textsc{CREDIL} \\
+  \textsc{September 2008} & \emph{Maker and Founding Board Member} \\
+   & \footnotesize{Participated in the founding of the organisation, implemented technical solutions using Free Software for multiple organisations as a part of CREDIL teams.  Continuing to serve as board member.  Details below, as marked.} \\
+  \multicolumn{2}{c}{} \\
+  \emph{Current} & Software Developer \emph{for} \textsc{NovaVision} \\
+  \textsc{September 2008} & \emph{Ambient Music and Digital Signage System} \\
+  \tiny{CREDIL} & \footnotesize{Implemented server and display components, reusing presentation system architecture.  Used GNU/Linux, Ruby, GTK, Gstreamer, Clutter, and Ruby on Rails.  Implemented userspace driver for LCD display unit included in the hardware platform. System deployed for several large customers.} \\
+  \multicolumn{2}{c}{} \\
+  \emph{Current} & Software Developer \emph{for} OTGV-C \\
+  \textsc{August 2009} & \emph{SIP/h.264 Video Softphone Application for Android} \\
+  \tiny{CREDIL} & \footnotesize{Contributed to multiple components of the stack, including the streaming media engine, user interface and user experience integration.} \\
+  \multicolumn{2}{c}{} \\
+  \textsc{Summer 2008} & Software Developer \emph{for} \textsc{Meloche Television} \\
+   & \emph{Presentation Display for Live Television Events} \\
+  \tiny{CREDIL} & \footnotesize{Implemented server and display components.  used GNU/Linux, Ruby, GTK, and Ruby on Rails.  Used for live industry television event hosted by a large pharmaceutical organisation.} \\
+  %% END CREDIL PROJECTS %%
+  \multicolumn{2}{}{} \\  
+  \textsc{Apr 2007-Sept 2008} & Software Developer \emph{for} \textsc{Infoglobe} \\
+   & \footnotesize{Supported existing television presentation system.  Developed recorder appliance system for use in legal procedings, using Python and Gstreamer.} \\
+  \multicolumn{2}{c}{} \\
+  \textsc{Winter 2006} & Drupal Developer \emph{for} \textsc{OpenConcept Consulting} \\
+   & \footnotesize{Developed a solution to migrate web site content from an older proprietary CMS system to Drupal 5.} \\
+  \multicolumn{2}{c}{} \\
+  \textsc{Jul 2003-Jul 2006} & IT Administrator and Developer \emph{for} \textsc{Infoman Inc.} \\
+   & \footnotesize{Maintained small office network, implemented a web application in Rails for managing terms and definitions used in ISO JTC1 standardisation processes on e-business and e-learning.} \\
+  \multicolumn{2}{c}{} \\
+  \emph{Current} & IT Administrator \emph{for} \textsc{Integral DX Engineering Ltd.} \\
+   \textsc{2003} & \footnotesize{Providing ongoing incidental support and consulting on IT systems using Free Software for a growing mechanical engineering firm.} \\
+
+\end{longtable}
+
+\section{Community}
+Contributed to the following projects:
+
+\begin{longtable}{p{3cm}|p{12cm}}
+  \textsc{\href{http://www.srb2.org}{SRB2}} & Community-Produced DOOM-based game with a Platformer Twist \\
+   & \footnotesize{Contributed some platform support code, bug fixes, and hosting of online development facilities including issue tracking and source code repository.} \\
+  \multicolumn{2}{c}{} \\
+  \textsc{\href{http://www.laptop.org}{OLPC}} & One Laptop Per Child \\
+   & \footnotesize{Contributed specifications and prototype of Develop activity, a component intended to enable children in the OLPC program to modify and create Activity software.} \\
+  \multicolumn{2}{c}{} \\
+  \textsc{\href{http://www.gmusicbrowser.org}{gmusicbrowser}} & Perl and GTK Media Player \\
+   & \footnotesize{Contributed plugins} \\
+  \multicolumn{2}{c}{} \\
+  \textsc{\href{http://www.oclug.on.ca}{OCLUG}} & Ottawa Canada Linux Users' Group \\
+   & \footnotesize{Served on board of directors in 2004.}
+\end{longtable}
+
+\href{http://code.orospakr.ca}{http://code.orospakr.ca}
+
+\href{http://github.com/orospakr}{http://github.com/orospakr}
+
+\end{document}

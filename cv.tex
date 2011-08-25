@@ -3,15 +3,14 @@
 % lots of help shamelessly taken from:
 % http://www.cv-templates.info/2009/03/professional-cv-latex/
 
-% Maker and Founder Board member @ 2008-2009 CREDIL
-% ...
-%
+% Build with `xelatex cv.tex`
 
 \documentclass[letterpaper,10pt]{article}
 
 %A Few Useful Packages
 \usepackage{marvosym}
 \usepackage{fontspec}                                   %for loading fonts
+\usepackage{setspace}
 \usepackage{xunicode,xltxtra,url,parskip}       %other packages for formatting
 \RequirePackage{color,graphicx}
 \usepackage[usenames,dvipsnames]{xcolor}
@@ -54,21 +53,22 @@
   \textsc{Date of Birth:} & July 29th, 1985 \\
   \textsc{Address:} & 305-457 McLeod St, Ottawa, Ontario, Canada \\
   \textsc{Phone:} & +1.613.286.8829 \\
-  \textsc{WWW Site:} & \href{http://www.orospakr.ca}{http://www.orospakr.ca} \\
-  \textsc{Electronic Mail:} & \href{mailto:andrew@orospakr.ca}{andrew@orospakr.ca}, \href{mailto:aclunis@credil.org}{aclunis@credil.org} \\
-  \textsc{Languages:} & English Fluent
+  \textsc{Twitter:} & \href{http://twitter.com/orospakr/}{@orospakr} \\
+  \textsc{GitHub:} & \href{https://github.com/orospakr/}{https://www.github.com/orospakr/} \\
+  \textsc{Web site:} & \href{http://www.orospakr.ca}{http://www.orospakr.ca/} \\
+  \textsc{Electronic Mail:} & \href{mailto:andrew@orospakr.ca}{andrew@orospakr.ca} \\
 \end{longtable}
 
 \section{Overview}
-Andrew Clunis is a self-taught software developer, specialising in Free Software, with experience writing both graphical desktop and web-based applications.  An active participant in the Free Software community, Andrew has contributed code to a number of different projects.
+Andrew Clunis is a self-taught software developer, specialising in Free Software, with experience writing both graphical desktop and web-based applications.  An active participant in the Free Software community, Andrew has contributed code to a number of different projects.  He is something of a generalist and has interests, expertise and experience distributed throughout the depth of multiple stacks.
 
-\section{Skills}
+\section{Technologies}
 \begin{longtable}{p{3cm}|p{12cm}}
-  \textsc{Operating Systems} & GNU/Linux (Debian), *BSD, Windows\\
+  \textsc{Operating Systems} & GNU/Linux (Debian/Ubuntu), *BSD, Microsoft Windows\\
   \multicolumn{2}{c}{} \\
-  \textsc{Languages} & Ruby, Python, Perl, C(++), C\#, Java \\
+  \textsc{Languages} & Ruby, JavaScript, Python, C(++), C\#, Java \\
   \multicolumn{2}{c}{} \\
-  \textsc{Systems} & GTK, Gstreamer, Ruby on Rails, Android, PacketVideo OpenCORE, Linux Kernel
+  \textsc{Systems} & GTK, Gstreamer, Ruby on Rails, Android (and Android internals), Node.js, Linux kernel
 \end{longtable}
 
 \section{Work Experience}
@@ -77,17 +77,22 @@ Andrew Clunis is a self-taught software developer, specialising in Free Software
   \textsc{September 2008} & \emph{Maker and Founding Board Member} \\
    & \footnotesize{Participated in the founding of the organisation, implemented technical solutions using Free Software for multiple organisations as a part of CREDIL teams.  Continuing to serve as board member.  Details below, as marked.} \\
   \multicolumn{2}{c}{} \\
+  \emph{Current} & Software Developer \emph{for} \textsc{HRSDC} \\
+  \textsc{November 2010} & \emph{Video Stream ``Reflector'' for IITB Webcasting System} \\
+  \tiny{CREDIL} & \footnotesize{Implemented ``Stream Pump'', an MMSH video stream reflector for enabling delivery of live video content to large numbers of desktops behind network bottlenecks.  Used Node.js and GNU/Linux.} \\
+  \multicolumn{2}{c}{} \\
   \emph{Current} & Software Developer \emph{for} \textsc{NovaVision} \\
   \textsc{September 2008} & \emph{Ambient Music and Digital Signage System} \\
   \tiny{CREDIL} & \footnotesize{Implemented server and display components, reusing presentation system architecture.  Used GNU/Linux, Ruby, GTK, Gstreamer, Clutter, and Ruby on Rails.  Implemented userspace driver for LCD display unit included in the hardware platform. System deployed for several large customers.} \\
+  \pagebreak
   \multicolumn{2}{c}{} \\
-  \emph{Current} & Software Developer \emph{for} OTGV-C \\
-  \textsc{August 2009} & \emph{SIP/h.264 Video Softphone Application for Android} \\
-  \tiny{CREDIL} & \footnotesize{Contributed to multiple components of the stack, including the streaming media engine, user interface and user experience integration.} \\
+  \textsc{Aug 2009-June 2010} & Software Developer \emph{for} OTGV-C \\
+  \tiny{CREDIL} & \emph{SIP/h.264 Video Softphone Application for Android} \\
+  & \footnotesize{Contributed to multiple components of the stack, including the streaming media engine, user interface and user experience integration.} \\
   \multicolumn{2}{c}{} \\
   \textsc{Summer 2008} & Software Developer \emph{for} \textsc{Meloche Television} \\
-   & \emph{Presentation Display for Live Television Events} \\
-  \tiny{CREDIL} & \footnotesize{Implemented server and display components.  Used GNU/Linux, Ruby, GTK, and Ruby on Rails.  Developed for live industry television event hosted by a large pharmaceutical organisation.} \\
+  \tiny{CREDIL} & \emph{Presentation Display for Live Television Events} \\
+   & \footnotesize{Implemented server and display components.  Used GNU/Linux, Ruby, GTK, and Ruby on Rails.  Developed for live industry television event hosted by a large pharmaceutical corporation.} \\
   %% END CREDIL PROJECTS %%
   \multicolumn{2}{}{} \\  
   \textsc{Apr 2007-Sept 2008} & Software Developer \emph{for} \textsc{Infoglobe} \\
@@ -105,24 +110,25 @@ Andrew Clunis is a self-taught software developer, specialising in Free Software
 \end{longtable}
 
 \section{Community}
-Contributed to the following projects:
+Contributed to or created the following projects:
 
 \begin{longtable}{p{3cm}|p{12cm}}
-  \textsc{\href{http://www.srb2.org}{SRB2}} & Community-Produced DOOM-based game with a Platformer Twist \\
+  \textsc{\href{https://github.com/orospakr/stream-pump}{Stream Pump}} & MMSH Video Stream Reflector in Node.js \\
+   & \footnotesize{Created new Free Software project to implement the HRSDC webcasting project detailed above.} \\
+  \multicolumn{2}{c}{} \\
+  \textsc{\href{http://www.srb2.org}{SRB2}} & Community-Produced DOOM-based game with a classic platformer twist \\
    & \footnotesize{Contributed some platform support code, bug fixes, and hosting of online development facilities including issue tracking and source code repository.} \\
   \multicolumn{2}{c}{} \\
   \textsc{\href{http://www.laptop.org}{OLPC}} & One Laptop Per Child \\
    & \footnotesize{Contributed specifications and prototype of Develop activity, a component intended to enable children in the OLPC program to modify and create Activity software.} \\
   \multicolumn{2}{c}{} \\
-  \textsc{\href{http://www.gmusicbrowser.org}{gmusicbrowser}} & Perl and GTK Media Player \\
-   & \footnotesize{Contributed plugins} \\
+  \textsc{\href{https://github.com/brownan/Minecraft-Overviewer}{Minecraft Overviewer}} & Minecraft to Google Maps JS API renderer \newline \footnotesize{Contributed sign live search box, allowing users to find places of note in a large Minecraft map quickly.} \\
+  \multicolumn{2}{c}{} \\
+  \textsc{\href{http://www.gmusicbrowser.org}{gmusicbrowser}} & Media Player in Perl and GTK \\
+   & \footnotesize{Contributed plugins, specifically for automatic song rating and an HTTP web interface.} \\
   \multicolumn{2}{c}{} \\
   \textsc{\href{http://www.oclug.on.ca}{OCLUG}} & Ottawa Canada Linux Users' Group \\
    & \footnotesize{Served on board of directors in 2004.}
 \end{longtable}
-
-\href{http://code.orospakr.ca}{http://code.orospakr.ca}
-
-\href{http://github.com/orospakr}{http://github.com/orospakr}
 
 \end{document}

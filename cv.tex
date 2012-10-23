@@ -3,7 +3,7 @@
 % lots of help shamelessly taken from:
 % http://www.cv-templates.info/2009/03/professional-cv-latex/
 
-% Build with `xelatex cv.tex`
+% Build with `xelatex cv.tex`.  You'll need texlive
 
 \documentclass[letterpaper,10pt]{article}
 
@@ -39,7 +39,6 @@
 %Tweak a bit the top margin
 %\addtolength{\voffset}{-1.3cm}
 
-
 \begin{document}
 
 \pagestyle{empty} % non-numbered pages
@@ -53,42 +52,61 @@
   \textsc{Date of Birth:} & July 29th, 1985 \\
   \textsc{Address:} & 305-457 McLeod St, Ottawa, Ontario, Canada \\
   \textsc{Phone:} & +1.613.286.8829 \\
-  \textsc{Twitter:} & \href{http://twitter.com/orospakr/}{@orospakr} \\
-  \textsc{GitHub:} & \href{https://github.com/orospakr/}{https://www.github.com/orospakr/} \\
-  \textsc{Web site:} & \href{http://www.orospakr.ca}{http://www.orospakr.ca/} \\
+  \textsc{Twitter and G+:} & \href{http://twitter.com/orospakr}{@orospakr} \emph{and} \href{https://plus.google.com/101728978406554574081}{+Andrew Clunis}\\
+  \textsc{GitHub:} & \href{https://github.com/orospakr}{https://www.github.com/orospakr} \\
   \textsc{Electronic Mail:} & \href{mailto:andrew@orospakr.ca}{andrew@orospakr.ca} \\
 \end{longtable}
 
 \section{Overview}
-Andrew Clunis is a self-taught software developer, specialising in Free Software, with experience writing both graphical desktop and web-based applications.  An active participant in the Free Software community, Andrew has contributed code to a number of different projects.  He is something of a generalist and has interests, expertise and experience distributed throughout the depth of multiple stacks.
+Andrew Clunis is a developer, with special emphasis on Free Software,
+with experience writing both desktop, mobile, server, and
+JavaScript-based rich web client applications.  An active participant
+in the Free Software community, Andrew has contributed code to a
+number of different projects.  He is something of a generalist and has
+interests, expertise, and experience distributed throughout the depth
+of multiple stacks.
 
 \section{Technologies}
 \begin{longtable}{p{3cm}|p{12cm}}
-  \textsc{Operating Systems} & GNU/Linux (Debian/Ubuntu), *BSD, Microsoft Windows\\
+  \textsc{Operating Systems} & GNU/Linux (Debian/Ubuntu), *BSD, Android, Microsoft Windows\\
   \multicolumn{2}{c}{} \\
   \textsc{Languages} & Ruby, JavaScript, Python, C(++), C\#, Java \\
   \multicolumn{2}{c}{} \\
-  \textsc{Systems} & GTK, Gstreamer, Ruby on Rails, Android (and Android internals), Node.js, Linux kernel
+  \textsc{Systems} & GTK, Gstreamer, Ruby on Rails, Android (and Android internals), Mono, Node.js, iOS, .net MVC, Xamarin's MonoDroid and MonoTouch, and the Linux kernel
 \end{longtable}
 
-\section{Work Experience}
+\section{Engagements and Projects}
 \begin{longtable}{p{3cm}|p{12cm}}
-  \emph{Current} & Maker \emph{for} \textsc{CREDIL} \\
-  \textsc{September 2008} & \emph{Maker and Founding Board Member} \\
-   & \footnotesize{Participated in the founding of the organisation, implemented technical solutions using Free Software for multiple organisations as a part of CREDIL teams.  Continuing to serve as board member.  Details below, as marked.} \\
+  \emph{Current} & Maker and Founding Board Member \emph{at} \textsc{CREDIL} \\
+  \textsc{September 2008} & \footnotesize{Participated in the founding of the organisation, implemented technical solutions using Free Software (detailed below) for multiple organisations as a part of CREDIL teams.  Continuing to serve as board member.} \\
+\multicolumn{2}{c}{} \\
+  \textsc{Jan 2012-Oct 2012} & Software Developer \emph{for} \textsc{Macadamian Technologies Inc.} \\
+   & \footnotesize{Worked on two customer projects (detailed below), and internal research projects regarding new development platforms (namely Xamarin MonoDroid/MonoTouch and Windows Metro).} \\
+\multicolumn{2}{c}{} \\
+  \textsc{Mar 2012-Jun 2012} & Software Developer \emph{for} \textsc{Samsung} \emph{via} \textsc{Macadamian} \\
+  \tiny{Macadamian} & \emph{Android Frontend for Prototype Mobile Edge Networking System} \\
+   & \footnotesize{Implemented application-specific protocol at layer 6, application UI navigation regime, and other UI components.  Used Android and Java.} \\
+\multicolumn{2}{c}{} \\
+  \textsc{Jun 2012-Oct 2012} & Software Developer \emph{for} \textsc{Research in Motion} \emph{via} \textsc{Macadamian} \\
+  \tiny{Macadamian} & \emph{Platform Demonstration Application} \\
+   & \footnotesize{Designed and implemented backend REST content service and BlackBerry 10 mobile app client interface bindings.  Used C++, QNX, QtCore, C\#, .net MVC 4, and BB10 Cascades.} \\
+\pagebreak
+\multicolumn{2}{c}{} \\
+  \textsc{Nov 2010-Jul 2011} & Software Developer \emph{for} \textsc{HRSDC} \\
+  \tiny{CREDIL} & \emph{Video Stream ``Reflector'' for IITB Webcasting System} \\
+   & \footnotesize{Implemented ``{\href{https://github.com/orospakr/stream-pump}{Stream Pump}}'', a thin MMSH video stream reflector for enabling delivery of live video content to large numbers of desktops behind network bottlenecks.  Used Node.js and GNU/Linux.} \\
+\multicolumn{2}{c}{} \\
+  \textsc{Summer 2011} & Software Developer \emph{for} \textsc{Language Technologies Research Centre (CRTL)} \\
+  \tiny{CREDIL} & \emph{Remote Desktop Access Customer Portal} \\
+   & \footnotesize{Bootstrapped customer portal and authentication facilities.  Specified requirements for and integrated designer-produced layout and visual design assets.  Used Ruby on Rails and PostgreSQL.} \\
   \multicolumn{2}{c}{} \\
-  \emph{Current} & Software Developer \emph{for} \textsc{HRSDC} \\
-  \textsc{November 2010} & \emph{Video Stream ``Reflector'' for IITB Webcasting System} \\
-  \tiny{CREDIL} & \footnotesize{Implemented ``Stream Pump'', an MMSH video stream reflector for enabling delivery of live video content to large numbers of desktops behind network bottlenecks.  Used Node.js and GNU/Linux.} \\
-  \multicolumn{2}{c}{} \\
-  \emph{Current} & Software Developer \emph{for} \textsc{NovaVision} \\
-  \textsc{September 2008} & \emph{Ambient Music and Digital Signage System} \\
-  \tiny{CREDIL} & \footnotesize{Implemented server and display components, reusing presentation system architecture.  Used GNU/Linux, Ruby, GTK, Gstreamer, Clutter, and Ruby on Rails.  Implemented userspace driver for LCD display unit included in the hardware platform. System deployed for several large customers.} \\
-  \pagebreak
+  \textsc{Sept 2008-Dec 2011} & Software Developer \emph{for} \textsc{NovaVision} \\
+  \tiny{CREDIL} & \emph{Retail Ambient Music and Digital Signage System} \\
+   & \footnotesize{Implemented administration UI, REST interface, playlisting control, audio playback, and display components.  Used GNU/Linux, Ruby, GTK, Gstreamer, Clutter, and Ruby on Rails.  Implemented userspace driver for LCD display unit included in the hardware platform. System deployed for several large customers.} \\
   \multicolumn{2}{c}{} \\
   \textsc{Aug 2009-June 2010} & Software Developer \emph{for} OTGV-C \\
   \tiny{CREDIL} & \emph{SIP/h.264 Video Softphone Application for Android} \\
-  & \footnotesize{Contributed to multiple components of the stack, including the streaming media engine, user interface and user experience integration.} \\
+  & \footnotesize{Contributed to multiple components of the stack, including the streaming media engine and user experience.  Used Android, Java, C++, PJSIP, and OpenCore.} \\
   \multicolumn{2}{c}{} \\
   \textsc{Summer 2008} & Software Developer \emph{for} \textsc{Meloche Television} \\
   \tiny{CREDIL} & \emph{Presentation Display for Live Television Events} \\
@@ -102,12 +120,14 @@ Andrew Clunis is a self-taught software developer, specialising in Free Software
    & \footnotesize{Developed a solution to migrate web site content from an older proprietary CMS system to Drupal 5.} \\
   \multicolumn{2}{c}{} \\
   \textsc{Jul 2003-Jul 2006} & IT Administrator and Developer \emph{for} \textsc{Infoman Inc.} \\
-   & \footnotesize{Maintained small office network, implemented a web application in Rails for managing terms and definitions used in ISO JTC1 standardisation processes on e-business and e-learning.} \\
+   & \footnotesize{Maintained small office network, implemented a web application in Rails for managing terms and definitions used in ISO JTC1 standardisation processes on e-business and e-learning.  Used GNU/Linux, PostgreSQL, and Ruby on Rails.} \\
   \multicolumn{2}{c}{} \\
-  \emph{Current} & IT Administrator \emph{for} \textsc{Integral DX Engineering Ltd.} \\
-   \textsc{2003} & \footnotesize{Providing ongoing incidental support and consulting on IT systems using Free Software for a growing mechanical engineering firm.} \\
+  \textsc{2003-2008} & IT Administrator \emph{for} \textsc{Integral DX Engineering Ltd.} \\
+   & \footnotesize{Providing ongoing incidental support and consulting on IT systems using Free Software for a growing mechanical engineering firm.} \\
 
 \end{longtable}
+
+\pagebreak
 
 \section{Community}
 Contributed to or created the following projects:
@@ -116,7 +136,7 @@ Contributed to or created the following projects:
   \textsc{\href{https://github.com/orospakr/stream-pump}{Stream Pump}} & MMSH Video Stream Reflector in Node.js \\
    & \footnotesize{Created new Free Software project to implement the HRSDC webcasting project detailed above.} \\
   \multicolumn{2}{c}{} \\
-  \textsc{\href{http://www.srb2.org}{SRB2}} & Community-Produced DOOM-based game with a classic platformer twist \\
+  \textsc{\href{http://www.srb2.org}{SRB2}} & DOOM-based game with a classic platformer twist \\
    & \footnotesize{Contributed some platform support code, bug fixes, and hosting of online development facilities including issue tracking and source code repository.} \\
   \multicolumn{2}{c}{} \\
   \textsc{\href{http://www.laptop.org}{OLPC}} & One Laptop Per Child \\
@@ -125,7 +145,13 @@ Contributed to or created the following projects:
   \textsc{\href{https://github.com/brownan/Minecraft-Overviewer}{Minecraft Overviewer}} & Minecraft to Google Maps JS API renderer \newline \footnotesize{Contributed sign live search box, allowing users to find places of note in a large Minecraft map quickly.} \\
   \multicolumn{2}{c}{} \\
   \textsc{\href{http://www.gmusicbrowser.org}{gmusicbrowser}} & Media Player in Perl and GTK \\
-   & \footnotesize{Contributed plugins, specifically for automatic song rating and an HTTP web interface.} \\
+   & \footnotesize{Contributed plugins, specifically for automatic song rating and an HTTP web interface and REST API.} \\
+  \multicolumn{2}{c}{} \\
+  \textsc{\href{https://github.com/orospakr/gmusicbrowser-remote}{GMB Remote}} & Remote Control App for Gmusicbrowser in C\# for both Android and iOS \\
+   & \footnotesize{Created mostly as a demonstration of portable app development with the Xamarin Mono* platforms.} \\
+  \multicolumn{2}{c}{} \\
+  \textsc{\href{https://github.com/orospakr/tukia}{Tukia}} & Controlled Vocabulary Management Tool for ISO standardization processes \\
+   & \footnotesize{Created in Ruby on Rails for Infoman Inc., as detailed above.} \\
   \multicolumn{2}{c}{} \\
   \textsc{\href{http://www.oclug.on.ca}{OCLUG}} & Ottawa Canada Linux Users' Group \\
    & \footnotesize{Served on board of directors in 2004.}
